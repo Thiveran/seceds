@@ -101,5 +101,9 @@
   "@types/react": "^18.2.15",
   "@types/node": "^20.12.7"
 }
+  "scripts": {
+  "postinstall": "if [ \"$VERCEL\" != \"1\" ]; then npx playwright install chromium; fi"
+}
+
 
 }
